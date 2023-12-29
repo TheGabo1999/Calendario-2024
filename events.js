@@ -1,6 +1,6 @@
 var eventos = [
-  { fecha: '2023-01-13', nombre: 'E-Prix de Ciudad de Mexico' }, imagen: 'img/FE.jpg' },
-  { fecha: '2023-01-26', nombre: 'E-Prix de Ridiyah' }, imagen: 'img/FE.jpg' },
+  { fecha: '2023-01-13', nombre: 'E-Prix de Ciudad de Mexico', imagen: 'img/FE.jpg' },
+  { fecha: '2023-01-26', nombre: 'E-Prix de Ridiyah' , imagen: 'img/FE.jpg' },
   // Agrega más eventos según sea necesario
 ];
 

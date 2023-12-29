@@ -1,0 +1,136 @@
+* {
+	font-family: 'Open Sans', sans-serif;;
+}
+
+.nav {
+	background-color: #f00;
+}
+
+.nav__ul {
+	display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.nav__li {
+	display: inline-block;
+	padding: 9px;
+	color: #fff;
+	text-align: center;
+}
+
+.nav__li:hover > a {
+	color: #000000;
+}
+
+.nav__li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+body {
+	background-color: #ddd;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: repeat(auto-fill, 1fr);
+    min-height: 100vh; /* Asegura que el grid ocupe al menos el 100% de la altura de la ventana */
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+}
+
+main {
+	grid-area: main;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+section {
+    border: 5px solid #afafaf;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendario {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* o el valor que prefieras */
+}
+
+.race-name, .race-date {
+	display: block;
+}
+
+.calendario__card {
+	background-color: #fff;
+	margin: 10px; /* Ajusta el margen según tus necesidades */
+    box-sizing: content-box;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.horarios-info {
+	display: flex;
+}
+
+.country-flag {
+	width: 70px;
+	border: 2px solid #aaa;
+	transition: width 0.3s ease; /* Agrega una transición para la propiedad width */
+}
+
+.race-track {
+	width: 200px;
+	transition: width 0.3s ease, transform 4s ease;
+}
+
+.card-info:hover {
+	background-color: #eee;
+}
+
+.card-info:hover .country-flag{
+	width: 100px;
+}
+
+.card-info:hover .race-track{
+	width: 230px;
+	transform: rotate(20deg);
+}
+
+.race-date, .race-name {
+	border-bottom: 1px solid #000;
+}

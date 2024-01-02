@@ -62,11 +62,13 @@ nav {
 
 main {
 	grid-area: main;
-    gap: 20px;
     padding: 20px;
+    text-align: center;
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
 	text-align: center;
     grid-area: aside;
     background-color: #555;
@@ -83,23 +85,19 @@ footer {
 
 .categorias {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Ejemplo: dos columnas principales */
-}
-
-/* Estilos adicionales para mejorar la apariencia */
-section {
-    border: 5px solid #afafaf;
-    padding: 10px;
-    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr; /* Ejemplo: dos columnas principales */
 }
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 .wallpaper {
+    margin: 15px;
 	overflow: hidden;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border-top: 4px solid #990000;
+    border-bottom: 7px solid #fa0020;
 }
 
 .wallpaper img {
@@ -107,9 +105,14 @@ img {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    margin-top: 3px;
 }
 
-img:hover {
+main img:hover {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
+}
+
+aside img {
+    width: 250px
 }

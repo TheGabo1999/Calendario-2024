@@ -1,6 +1,6 @@
 var eventos = [
-  { fecha: '2023-01-13', nombre: 'E-Prix de Ciudad de Mexico', imagen: 'img/FE.jpg' },
-  { fecha: '2023-01-26', nombre: 'E-Prix de Ridiyah' , imagen: 'img/FE.jpg' },
+  { fecha: '13-01-2023', nombre: 'E-Prix de Ciudad de Mexico', imagen: 'img/FE.jpg', link: 'formulae.html' },
+  { fecha: '26-01-2023', nombre: 'E-Prix de Ridiyah' , imagen: 'img/FE.jpg' },
   // Agrega más eventos según sea necesario
 ];
 
@@ -19,9 +19,11 @@ function actualizarEventos() {
   // Actualiza el contenido de tu <aside> con la información del evento próximo
   var asideElement = document.getElementById('proximos-eventos');
   asideElement.innerHTML = `
-    <h2>${eventoProximo.nombre}</h2>
-    <p>Fecha: ${eventoProximo.fecha}</p>
+    <h2>Próximas Carreras</h2>
+    <h3>${eventoProximo.nombre}</h3>
+    <h4>Fecha: ${eventoProximo.fecha}</h4>
     <img src="${eventoProximo.imagen}" alt="${eventoProximo.nombre}">
+    <a href="${eventoProximo.link}"<h6>Ver horarios</h6></a>
   `;
 }
 

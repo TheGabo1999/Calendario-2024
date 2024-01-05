@@ -92,9 +92,9 @@ section {
 }
 
 .calendario {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* o el valor que prefieras */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
 }
 
 .race-name, .race-date {

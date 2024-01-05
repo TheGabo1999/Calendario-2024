@@ -32,6 +32,14 @@
 	font-size: 20px;
 }
 
+.nav__toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #a00;
+    font-size: 24px;
+}
+
 a {
 	color: #fff;
 	text-decoration: none;
@@ -67,6 +75,7 @@ main {
 	grid-area: main;
     gap: 20px;
     padding: 20px;
+
 }
 
 footer {
@@ -84,9 +93,9 @@ section {
 }
 
 .calendario {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* o el valor que prefieras */
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
 }
 
 .race-name, .race-date {
@@ -133,4 +142,73 @@ section {
 
 .race-date, .race-name {
 	border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 600px) {
+
+.nav__ul {
+    display: none; /* Oculta la lista en pantallas pequeñas */
+    flex-direction: column;
+}
+
+.nav__li {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 2px solid #a00;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+    /* Agrega un botón de menú visible en pantallas pequeñas */
+.nav__toggle {
+    display: block;
+}
+
+body {
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+.calendario {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-info:hover .race-track{
+	width: 210px;
+}
+}
+
+@media only screen and (max-width: 420px) {
+
+.calendario__card {
+	margin: 7px;
+}
+
+.country-flag {
+	width: 50px
+}
+
+.race-track {
+	width: 150px;
+}
+
+.card-info:hover {
+	background-color: #eee;
+}
+
+.card-info:hover .country-flag{
+	width: 70px;
+}
+
+.card-info:hover .race-track{
+	width: 170px;
+}
+
+.card-info {
+	padding: 10px;
 }

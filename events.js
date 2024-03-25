@@ -493,40 +493,40 @@ const eventos = [
         enlace: "GP/calafate.html"
     },
     {
-        nombre: "",
+        nombre: "Viedma",
         fecha: new Date("2024-03-17"),
         imagen: "img/",
         enlace: "GP/.html"
     },
     {
-        nombre: "",
+        nombre: "Neuquén",
         fecha: new Date("2024-04-07"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "http://actc.org.ar/upload/galeriamultimedia/2349/61697_big.jpg",
+        enlace: "GP/neuquen.html"
     },
     {
-        nombre: "",
+        nombre: "Toay, La Pampa",
         fecha: new Date("2024-04-28"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "http://actc.org.ar/upload/galeriamultimedia/2446/65482_big.jpg",
+        enlace: "GP/toay.html"
     },
     {
-        nombre: "",
+        nombre: "Termas de Rio Hondo",
         fecha: new Date("2024-05-12"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "http://actc.org.ar/upload/galeriamultimedia/2383/62893_big.jpg",
+        enlace: "GP/termas.html"
     },
     {
-        nombre: "",
+        nombre: "Concepción del Uruguay",
         fecha: new Date("2024-05-26"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "http://actc.org.ar/upload/galeriamultimedia/2375/62570_big.jpg",
+        enlace: "GP/concepcion.html"
     },
     {
-        nombre: "",
+        nombre: "Rafaela",
         fecha: new Date("2024-06-16"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "http://actc.org.ar/upload/galeriamultimedia/2391/63183_big.jpg",
+        enlace: "GP/rafaela.html"
     },
     {
         nombre: "",

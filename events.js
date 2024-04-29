@@ -421,6 +421,12 @@ const eventos = [
         enlace: "GP/indyrc.html"
     },
     {
+        nombre: "Clasificacion Indy 500",
+        fecha: new Date("2024-05-19"),
+        imagen: "img/indy500.jpg",
+        enlace: "GP/indy500.html"
+    },
+    {
         nombre: "500 Millas de Indianapolis",
         fecha: new Date("2024-05-26"),
         imagen: "img/indy500.jpg",

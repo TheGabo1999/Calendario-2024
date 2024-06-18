@@ -535,22 +535,22 @@ const eventos = [
         enlace: "GP/rafaela.html"
     },
     {
-        nombre: "",
+        nombre: "Posadas",
         fecha: new Date("2024-07-07"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "https://actc.org.ar/upload/galeriamultimedia/2399/63528_big.jpg",
+        enlace: "GP/posadas.html"
     },
     {
-        nombre: "",
+        nombre: "San Juan",
         fecha: new Date("2024-07-28"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "http://actc.org.ar/upload/galeriamultimedia/2457/65883_big.jpg",
+        enlace: "GP/sanjuan.html"
     },
     {
-        nombre: "",
+        nombre: "Buenos Aires",
         fecha: new Date("2024-08-18"),
-        imagen: "img/",
-        enlace: "GP/.html"
+        imagen: "http://actc.org.ar/upload/galeriamultimedia/2414/64148_big.jpg",
+        enlace: "GP/buenosaires.html"
     },
     {
         nombre: "",
@@ -599,7 +599,7 @@ function mostrarEventosCercanos() {
     eventosFuturos.sort((a, b) => a.fecha - b.fecha);
 
     // Obtiene los primeros 4 eventos futuros
-    const eventosCercanos = eventosFuturos.slice(0, 4);
+    const eventosCercanos = eventosFuturos.slice(0, 5);
 
     const eventosContainer = document.getElementById("proximos-eventos");
     eventosContainer.innerHTML = ""; // Limpia el contenido anterior
